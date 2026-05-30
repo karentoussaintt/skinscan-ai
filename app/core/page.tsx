@@ -8,7 +8,7 @@ export default function Core() {
     allergies: "",
     ageRange: "",
   });
-  const [output, setOutput] = useState(null);
+  const [output, setOutput] = useState<any>(null);
   const [saved, setSaved] = useState(false);
 
   const handleSubmit = () => {
