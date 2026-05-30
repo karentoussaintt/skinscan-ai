@@ -1,4 +1,4 @@
-export default function Docs() {
+export default function Home() {
   return (
     <main className="min-h-screen bg-rose-50">
       <nav className="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
@@ -9,22 +9,13 @@ export default function Docs() {
           <a href="/docs" className="text-gray-600 hover:text-rose-500">Docs</a>
         </div>
       </nav>
-
-      <section className="max-w-3xl mx-auto px-8 py-16">
-        <h2 className="text-4xl font-bold text-gray-800 mb-6">Documentation</h2>
-        <p className="text-gray-500 text-lg mb-8">This page contains the technical documentation and prompt library for SkinScan AI.</p>
-        
-        <div className="bg-white rounded-2xl p-8 shadow-sm">
-          <h3 className="text-2xl font-semibold text-gray-800 mb-4">Coding Agent Prompt</h3>
-          <p className="text-gray-500 mb-4">The following prompt was used with Claude Code to build the /core page:</p>
-          <div className="bg-gray-50 rounded-xl p-6 text-sm text-gray-700">
-            <p>ROLE: You are my disciplined AI-native coding partner building SkinScan AI.</p>
-            <p className="mt-2">STACK: Next.js, Tailwind CSS, Supabase, Vercel, GitHub.</p>
-            <p className="mt-2">TASK: Build the /core page with an intake form, AI output card, save button, and Supabase integration.</p>
-          </div>
-        </div>
+      <section className="flex flex-col items-center justify-center text-center px-8 py-24">
+        <h2 className="text-5xl font-bold text-gray-800 mb-6">Know your skin.<br/>Use only what you need.</h2>
+        <p className="text-xl text-gray-500 max-w-xl mb-10">SkinScan AI analyzes your skin type and concerns to recommend only the products that truly work for you — no more wasted money on trends that don't fit your skin.</p>
+        <a href="/core" className="bg-rose-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-rose-600">
+          Scan My Skin →
+        </a>
       </section>
-
       <footer className="text-center py-8 text-gray-400 text-sm">
         © 2026 SkinScan AI — Built by Karen Toussaint
       </footer>
