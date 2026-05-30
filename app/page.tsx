@@ -1,65 +1,33 @@
-import Image from "next/image";
-
-export default function Home() {
+export default function Docs() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-rose-50">
+      <nav className="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
+        <h1 className="text-2xl font-bold text-rose-500">SkinScan AI</h1>
+        <div className="flex gap-6">
+          <a href="/" className="text-gray-600 hover:text-rose-500">Home</a>
+          <a href="/core" className="text-gray-600 hover:text-rose-500">Scan</a>
+          <a href="/docs" className="text-gray-600 hover:text-rose-500">Docs</a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </nav>
+
+      <section className="max-w-3xl mx-auto px-8 py-16">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">Documentation</h2>
+        <p className="text-gray-500 text-lg mb-8">This page contains the technical documentation and prompt library for SkinScan AI.</p>
+        
+        <div className="bg-white rounded-2xl p-8 shadow-sm">
+          <h3 className="text-2xl font-semibold text-gray-800 mb-4">Coding Agent Prompt</h3>
+          <p className="text-gray-500 mb-4">The following prompt was used with Claude Code to build the /core page:</p>
+          <div className="bg-gray-50 rounded-xl p-6 text-sm text-gray-700">
+            <p>ROLE: You are my disciplined AI-native coding partner building SkinScan AI.</p>
+            <p className="mt-2">STACK: Next.js, Tailwind CSS, Supabase, Vercel, GitHub.</p>
+            <p className="mt-2">TASK: Build the /core page with an intake form, AI output card, save button, and Supabase integration.</p>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <footer className="text-center py-8 text-gray-400 text-sm">
+        © 2026 SkinScan AI — Built by Karen Toussaint
+      </footer>
+    </main>
   );
 }
