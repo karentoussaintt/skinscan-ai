@@ -12,6 +12,7 @@ export default function Home() {
       <section className="flex flex-col items-center justify-center text-center px-8 py-24">
         <h2 className="text-5xl font-bold text-gray-800 mb-6">Know your skin.<br/>Use only what you need.</h2>
         <p className="text-xl text-gray-500 max-w-xl mb-10">SkinScan AI analyzes your skin type and concerns to recommend only the products that truly work for you — no more wasted money on trends that don't fit your skin.</p>
+        <a href="/research" className="text-gray-600 hover:text-rose-500">Research</a>
         <a href="/core" className="bg-rose-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-rose-600">
           Scan My Skin →
         </a>
