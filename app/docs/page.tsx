@@ -7,6 +7,7 @@ export default function Docs() {
           <a href="/" className="text-gray-600 hover:text-rose-500">Home</a>
           <a href="/core" className="text-gray-600 hover:text-rose-500">Scan</a>
           <a href="/docs" className="text-gray-600 hover:text-rose-500">Docs</a>
+          <a href="/research" className="text-gray-600 hover:text-rose-500">Research</a>
         </div>
       </nav>
 
