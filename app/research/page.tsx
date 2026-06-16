@@ -33,7 +33,9 @@ export default function Research() {
 
   const filtered = competitors.filter(c =>
     c.name.toLowerCase().includes(search.toLowerCase()) ||
-    c.category.toLowerCase().includes(search.toLowerCase())
+    c.category.toLowerCase().includes(search.toLowerCase()) ||
+    c.country.toLowerCase().includes(search.toLowerCase()) ||
+    c.price.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
