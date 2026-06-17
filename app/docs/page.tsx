@@ -1,15 +1,17 @@
 export default function Docs() {
   return (
     <main className="min-h-screen bg-rose-50">
-      <nav className="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold text-rose-500">SkinScan AI</h1>
-        <div className="flex gap-6">
-          <a href="/" className="text-gray-600 hover:text-rose-500">Home</a>
-          <a href="/core" className="text-gray-600 hover:text-rose-500">Scan</a>
-          <a href="/docs" className="text-gray-600 hover:text-rose-500">Docs</a>
-          <a href="/research" className="text-gray-600 hover:text-rose-500">Research</a>
-        </div>
-      </nav>
+     <nav className="bg-white shadow-sm px-8 py-4 flex justify-between items-center">
+  <h1 className="text-2xl font-bold text-rose-500">SkinScan AI</h1>
+  <div className="flex gap-6">
+    <a href="/" className="text-gray-600 hover:text-rose-500">Home</a>
+    <a href="/core" className="text-gray-600 hover:text-rose-500">Scan</a>
+    <a href="/research" className="text-gray-600 hover:text-rose-500">Research</a>
+    <a href="/product" className="text-gray-600 hover:text-rose-500">Product</a>
+    <a href="/pricing" className="text-gray-600 hover:text-rose-500">Pricing</a>
+    <a href="/docs" className="text-gray-600 hover:text-rose-500">Docs</a>
+  </div>
+</nav>
 
       <section className="max-w-3xl mx-auto px-8 py-16">
         <h2 className="text-4xl font-bold text-gray-800 mb-6">Documentation</h2>
