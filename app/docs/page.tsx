@@ -10,6 +10,7 @@ export default function Docs() {
     <a href="/product" className="text-gray-600 hover:text-rose-500">Product</a>
     <a href="/pricing" className="text-gray-600 hover:text-rose-500">Pricing</a>
     <a href="/docs" className="text-gray-600 hover:text-rose-500">Docs</a>
+    <a href="/marketing" className="text-gray-600 hover:text-rose-500">Marketing</a>
   </div>
 </nav>
 
